@@ -1,10 +1,10 @@
-#+TITLE: Hodur example appl
+#+TITLE: Hodur example app
 
 * Getting started on Debian
 
 ** Install Clojure CLI tools
 
-*Do not install using =apt-get= as missing Clojure script runner (=clj=) which is =deps.edn= aware.*
+*Do not install using apt as missing Clojure script runner (clj) which is deps.edn aware.*
 
 https://clojure.org/guides/getting_started
 
