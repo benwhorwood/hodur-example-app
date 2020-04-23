@@ -1,0 +1,36 @@
+#+TITLE: Hodur example appl
+
+* Getting started on Debian
+
+** Install Clojure CLI tools
+
+*Do not install using =apt-get= as missing Clojure script runner (=clj=) which is =deps.edn= aware.*
+
+https://clojure.org/guides/getting_started
+
+#+begin_src bash
+curl -O https://download.clojure.org/install/linux-install-1.10.1.536.sh
+chmod +x linux-install-1.10.1.536.sh
+sudo ./linux-install-1.10.1.536.sh
+#+end_src
+
+** Run visualizer
+
+Can then run using alias from =deps.edn=...
+
+#+begin_src bash
+cd hodur_example_app/
+clj -A:visualizer
+#+end_src
+
+Following REPL starting, can then access browser on:
+
+http://localhost:9500/
+
+** Modify file and figwheel will redraw visualisation automatically
+
+Modify:
+
+file:src/hodur_example_app/visualizer.cljs
+
+Save and browser will update.
